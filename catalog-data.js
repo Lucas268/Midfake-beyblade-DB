@@ -6,7 +6,8 @@ window.MIDFAKE_CATALOG = {
     { id: "metal-fusion", name: "Metal Fusion", range: "First generation", description: "Individual entries from the Metal Fusion era." },
     { id: "metal-masters", name: "Metal Masters", range: "Second generation", description: "Add individual Metal Masters releases here as you research them." },
     { id: "metal-fury", name: "Metal Fury", range: "4D system", description: "Add individual Metal Fury releases here as you research them." },
-    { id: "zero-g", name: "Zero-G", range: "Shogun Steel", description: "Add individual Zero-G releases here as you research them." }
+    { id: "zero-g", name: "Zero-G", range: "Shogun Steel", description: "Add individual Zero-G releases here as you research them." },
+    { id: "Special Variants", name: "Special Variants", range: "Special Variants", description: "Recolors and limited variants of released beyblades" }
   ],
   beys: [
     {
@@ -77,24 +78,46 @@ window.MIDFAKE_CATALOG = {
       ]
     },
     {
-      id: "flame-saggitario-c145s",
+      id: "flame-sagittario-c145s",
       era: "metal-fusion",
-      name: "Flame Saggitario",
+      name: "Flame Sagittario",
       combo: "C145S",
       status: "In progress",
-      image: "",
-      imageAlt: "Add a clear photo of Flame Saggitario C145S",
+      image: "images/Flame Sagittario/FlameSagittario.png",
+      imageAlt: "Add a clear photo of Flame Sagittario C145S",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
-      observations: []
+      observations: [
+
+        {
+          component: "Packaging",
+          note: "The packaging for this beyblade has a slightly more faded color than the genuine one.",
+          midfakeImage: "images/Flame Sagittario/MidfakeBox.png",
+          midfakeImageAlt: "Add a photo of the Flame Sagittario packaging",
+          genuineImage: "images/Flame Sagittario/GenuineBox.png",
+          genuineImageAlt: "Add a photo of the genuine Flame Sagittario packaging",
+          sourceLabel: "Reddit reference listed in draft",
+          sourceUrl: "https://www.reddit.com/r/BeybladeMetal/comments/zxl5t2/flame_sagittario_midfake_takara_tomyhasbro/?tl=sv"
+        },
+        {
+          component: "Facebolt sticker",
+          note: "The midfake has a noticable difference in the facebolt sticker, it has yellow inside the eyes of the saggitarius, while the genuine one only has a solid orange color, making this one nice and easy to see.",
+          midfakeImage: "images/Flame Sagittario/mid.png",
+          midfakeImageAlt: "Add a close-up of the Flame Sagittario facebolt sticker",
+          genuineImage: "images/Flame Sagittario/gen.png",
+          genuineImageAlt: "Add a close-up of the genuine Flame Sagittario facebolt sticker",
+          sourceLabel: "Reddit reference listed in draft",
+          sourceUrl: "https://www.reddit.com/r/BeybladeMetal/comments/zxl5t2/flame_sagittario_midfake_takara_tomyhasbro/?tl=sv"
+        }
+      ]
     },
     {
-      id: "Dark Wolf D145S",
+      id: "Dark Wolf DF145FS",
       era: "metal-fusion",
       name: "Dark Wolf",
-      combo: "D145S",
+      combo: "DF145FS",
       status: "In progress",
-      image: "",
-      imageAlt: "Add a clear photo of Dark Wolf D145S",
+      image: "images/Dark Wolf/DarkWolf.png",
+      imageAlt: "Add a clear photo of Dark Wolf DF145FS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
     },
@@ -104,7 +127,7 @@ window.MIDFAKE_CATALOG = {
       name: "Dark Bull",
       combo: "H145SD",
       status: "In progress",
-      image: "",
+      image: "images/Dark Bull/DarkBull.png",
       imageAlt: "Add a clear photo of Dark Bull H145SD",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -115,30 +138,19 @@ window.MIDFAKE_CATALOG = {
       name: "Storm Aquario",
       combo: "100HF/S",
       status: "In progress",
-      image: "",
+      image: "images/Storm Aquario/StormAquarioHasbro.png",
       imageAlt: "Add a clear photo of Storm Aquario 100HF/S",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
     },
     {
-      id: "Storm Capricorn M145Q",
+      id: "Storm Capricorne M145Q",
       era: "metal-fusion",
-      name: "Storm Capricorn",
+      name: "Storm Capricorne",
       combo: "M145Q",
       status: "In progress",
-      image: "",
-      imageAlt: "Add a clear photo of Storm Capricorn M145Q",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
-      observations: []
-    },
-    {
-      id: "Rock Orso D125B",
-      era: "metal-fusion",
-      name: "Rock Orso",
-      combo: "D125B",
-      status: "In progress",
-      image: "",
-      imageAlt: "Add a clear photo of Rock Orso D125B",
+      image: "images/Storm Capricorne/StormCapricorne.png",
+      imageAlt: "Add a clear photo of Storm Capricorne M145Q",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
     },
@@ -148,7 +160,7 @@ window.MIDFAKE_CATALOG = {
       name: "Flame Libra",
       combo: "T125ES",
       status: "In progress",
-      image: "",
+      image: "images/Flame Libra/FlameLibra.png",
       imageAlt: "Add a clear photo of Flame Libra T125ES",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -159,7 +171,7 @@ window.MIDFAKE_CATALOG = {
       name: "Lightning L-Drago",
       combo: "100HF",
       status: "In progress",
-      image: "",
+      image: "images/Lightning L-Drago/LightningLDrago.png",
       imageAlt: "Add a clear photo of Lightning L-Drago 100HF",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -170,7 +182,7 @@ window.MIDFAKE_CATALOG = {
       name: "Dark Gasher",
       combo: "CH120FS",
       status: "In progress",
-      image: "",
+      image: "images/Dark Gasher/DarkGasher.png",
       imageAlt: "Add a clear photo of Dark Gasher CH120FS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -181,7 +193,7 @@ window.MIDFAKE_CATALOG = {
       name: "Burn Fireblaze",
       combo: "135MS",
       status: "In progress",
-      image: "",
+      image: "images/Burn Phoenix (Fireblaze)/bey.jpg",
       imageAlt: "Add a clear photo of Burn Fireblaze 135MS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -192,7 +204,7 @@ window.MIDFAKE_CATALOG = {
       name: "Earth Eagle",
       combo: "145WD",
       status: "In progress",
-      image: "",
+      image: "images/Earth Eagle/EarthEagle.jpg",
       imageAlt: "Add a clear photo of Earth Eagle 145WD",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -203,7 +215,7 @@ window.MIDFAKE_CATALOG = {
       name: "Earth Virgo",
       combo: "GB145BS",
       status: "In progress",
-      image: "",
+      image: "images/Earth Virgo/EarthVirgo.png",
       imageAlt: "Add a clear photo of Earth Virgo GB145BS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -214,7 +226,7 @@ window.MIDFAKE_CATALOG = {
       name: "Poison Serpent",
       combo: "SW145SD",
       status: "In progress",
-      image: "",
+      image: "images/Poison Serpent/PoisonSerpent.png",
       imageAlt: "Add a clear photo of Poison Serpent SW145SD",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -225,7 +237,7 @@ window.MIDFAKE_CATALOG = {
       name: "Evil Gemios",
       combo: "DF145FS",
       status: "In progress",
-      image: "",
+      image: "images/Evil Gemios/EvilGemios.png",
       imageAlt: "Add a clear photo of Evil Gemios DF145FS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
