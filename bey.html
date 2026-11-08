@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111312">
+  <meta name="description" content="Individual Beyblade identification notes and visual references.">
+  <title>Beyblade entry — Midfake Guide</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">◎</span>
+      Midfake Guide
+    </a>
+    <a class="top-link" href="how-to-add.html">How to add entries</a>
+  </header>
+
+  <main class="shell">
+    <nav class="breadcrumbs" id="breadcrumbs" aria-label="Breadcrumb"></nav>
+    <div id="entry-content" aria-live="polite"></div>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <p>Independent collector reference · Not affiliated with Takara Tomy or Hasbro.</p>
+      <p class="footer-tag">Let It Rip!</p>
+    </div>
+  </footer>
+
+  <dialog class="image-viewer" id="image-viewer" aria-label="Full-size image viewer">
+    <div class="viewer-close-row">
+      <button class="viewer-close" id="viewer-close" type="button" aria-label="Close image viewer">Close ✕</button>
+    </div>
+    <img class="viewer-image" id="viewer-image" alt="">
+    <p class="viewer-caption" id="viewer-caption"></p>
+  </dialog>
+
+  <script src="catalog-data.js"></script>
+  <script>
+    const { eras, beys } = window.MIDFAKE_CATALOG;
+    const content = document.getElementById("entry-content");
+    const breadcrumbs = document.getElementById("breadcrumbs");
+    const imageViewer = document.getElementById("image-viewer");
+    const viewerImage = document.getElementById("viewer-image");
+    const viewerCaption = document.getElementById("viewer-caption");
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (character) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      })[character]);
+    }
+
+    function renderBreadcrumbs(era, bey) {
+      breadcrumbs.innerHTML = `
+        <a class="crumb-link" href="index.html">Catalog</a>
+        <span class="crumb-separator" aria-hidden="true">/</span>
+        <a class="crumb-link" href="index.html#${encodeURIComponent(era.id)}">${escapeHtml(era.name)}</a>
+        <span class="crumb-separator" aria-hidden="true">/</span>
+        <span class="crumb-current" aria-current="page">${escapeHtml(bey.name)}</span>
+      `;
+    }
+
+    function renderPhoto(image, alt, label) {
+      if (!image) {
+        return `<span class="photo-placeholder">${escapeHtml(alt || `Add a ${label.toLowerCase()} photo`)}</span>`;
+      }
+
+      const description = alt || label;
+      return `
+        <button class="image-zoom" type="button" data-image-zoom
+          data-image-alt="${escapeHtml(description)}" data-image-caption="${escapeHtml(label)}"
+          aria-label="Open full-size image: ${escapeHtml(description)}">
+          <img src="${escapeHtml(image)}" alt="">
+          <span class="image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+        </button>
+      `;
+    }
+
+    function renderEntry(bey) {
+      const era = eras.find((item) => item.id === bey.era);
+      if (!era) {
+        content.innerHTML = `<p class="not-found">This Beyblade entry refers to an era that is not in the catalog. <a href="index.html">Return to the catalog</a>.</p>`;
+        return;
+      }
+
+      document.title = `${bey.name} — Midfake Guide`;
+      renderBreadcrumbs(era, bey);
+      const summary = bey.summary || "Catalog entry created. Add researched identification notes and visual references when available.";
+      const mainPhoto = renderPhoto(bey.image, bey.imageAlt, `${bey.name} ${bey.combo}`);
+      const observations = bey.observations.length
+        ? bey.observations.map((observation) => {
+          const sources = [
+            { label: observation.sourceLabel, url: observation.sourceUrl },
+            { label: observation.sourceLabel2, url: observation.sourceUrl2 }
+          ].filter((source) => source.url);
+          const sourceLinks = sources.length
+            ? `<div class="source-links">${sources.map((source) => `<a class="source-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label || "Open source reference")} ↗</a>`).join("")}</div>`
+            : "";
+
+          return `
+          <article class="evidence-item">
+            <div class="evidence-comparison">
+              <figure class="comparison-figure">
+                <figcaption>Midfake example</figcaption>
+                <div class="evidence-photo">${renderPhoto(observation.midfakeImage, observation.midfakeImageAlt, `Midfake example · ${observation.component}`)}</div>
+              </figure>
+              <figure class="comparison-figure">
+                <figcaption>Genuine reference</figcaption>
+                <div class="evidence-photo">${renderPhoto(observation.genuineImage, observation.genuineImageAlt, `Genuine reference · ${observation.component}`)}</div>
+              </figure>
+            </div>
+            <div class="evidence-copy">
+              <h3>${escapeHtml(observation.component)}</h3>
+              <p>${escapeHtml(observation.note)}</p>
+              ${sourceLinks}
+            </div>
+          </article>
+        `;
+        }).join("")
+        : `<p class="not-found">No part-specific notes yet. See <a href="how-to-add.html">how to add observations and photos</a>.</p>`;
+
+      content.innerHTML = `
+        <section class="detail-hero">
+          <div class="detail-hero-inner">
+            <div>
+              <p class="eyebrow">${escapeHtml(era.name)} · ${escapeHtml(bey.status)}</p>
+              <h1 class="page-title">${escapeHtml(bey.name)}</h1>
+              <p class="page-subtitle">${escapeHtml(bey.combo)}</p>
+              <p class="page-intro">${escapeHtml(summary)}</p>
+            </div>
+            <div class="main-photo">${mainPhoto}</div>
+          </div>
+        </section>
+        <section class="content-section">
+          <h2>Identification notes</h2>
+          <div class="evidence-list">${observations}</div>
+        </section>
+        <aside class="note"><strong>Research note:</strong> Collector observations are clues to compare, not standalone proof of authenticity. Check multiple details against reliable references for the same release and region.</aside>
+      `;
+      content.querySelector(".main-photo img")?.setAttribute("loading", "lazy");
+    }
+
+    const beyId = new URLSearchParams(window.location.search).get("id");
+    const bey = beys.find((item) => item.id === beyId);
+    if (bey) {
+      renderEntry(bey);
+    } else {
+      breadcrumbs.innerHTML = `<a class="crumb-link" href="index.html">Catalog</a><span class="crumb-separator" aria-hidden="true">/</span><span class="crumb-current" aria-current="page">Entry not found</span>`;
+      content.innerHTML = `<p class="not-found">That Beyblade entry could not be found. <a href="index.html">Return to the catalog</a> and choose an entry.</p>`;
+    }
+
+    content.addEventListener("click", (event) => {
+      const trigger = event.target.closest("[data-image-zoom]");
+      if (!trigger) return;
+      const image = trigger.querySelector("img");
+      if (!image || !image.currentSrc) return;
+      viewerImage.src = image.currentSrc;
+      viewerImage.alt = trigger.dataset.imageAlt;
+      viewerCaption.textContent = trigger.dataset.imageCaption;
+      imageViewer.showModal();
+    });
+
+    document.getElementById("viewer-close").addEventListener("click", () => {
+      imageViewer.close();
+    });
+
+    imageViewer.addEventListener("click", (event) => {
+      if (event.target === imageViewer) imageViewer.close();
+    });
+
+    imageViewer.addEventListener("close", () => {
+      viewerImage.removeAttribute("src");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111312">
+  <meta name="description" content="How to add Beyblade entries, identification notes, and visual references to the Midfake Guide.">
+  <title>How to add entries — Midfake Guide</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">◎</span>
+      Midfake Guide
+    </a>
+    <a class="top-link" href="index.html">Browse the catalog</a>
+  </header>
+
+  <main class="shell">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a class="crumb-link" href="index.html">Catalog</a>
+      <span class="crumb-separator" aria-hidden="true">/</span>
+      <span class="crumb-current" aria-current="page">How to add entries</span>
+    </nav>
+
+    <section>
+      <p class="eyebrow">Contributing to the archive</p>
+      <h1 class="page-title">Add a Beyblade entry</h1>
+      <p class="page-intro">The catalog data lives in one file. Each Beyblade gets its own URL and dedicated page; the era breadcrumb takes readers back to that era's catalog.</p>
+    </section>
+
+    <ol class="guide-steps">
+      <li>
+        <strong>Open the shared catalog data</strong>
+        <p>Edit <code>catalog-data.js</code> in the repository. All Beyblade entries are inside the <code>beys</code> array.</p>
+      </li>
+      <li>
+        <strong>Add your photos to the repository</strong>
+        <p>Create a folder such as <code>images/dragoon-storm/</code> and put your image files there. Use clear filenames and keep filenames' capitalization consistent; GitHub Pages paths are case-sensitive. Prefer photos you took or have permission to publish.</p>
+      </li>
+      <li>
+        <strong>Add one record per Beyblade</strong>
+        <p>Copy this object into <code>beys</code>, change the values, and keep the commas between neighboring objects. The <code>era</code> value must match an era's <code>id</code> listed at the top of the file.</p>
+        <pre class="code-block"><code>{
+  id: "dragoon-storm-105fs",
+  era: "metal-fusion",
+  name: "Dragoon Storm",
+  combo: "105FS",
+  status: "In progress",
+  image: "images/dragoon-storm/assembled.jpg",
+  imageAlt: "Dragoon Storm 105FS, top view",
+  summary: "Short overview of what has been researched.",
+  observations: []
+}</code></pre>
+        <p>Make every <code>id</code> unique. It becomes the entry link, for example <code>bey.html?id=dragoon-storm-105fs</code>.</p>
+      </li>
+      <li>
+        <strong>Add individual part notes and visual references</strong>
+        <p>Each observation displays a midfake example beside a genuine reference. Add both image paths to show a side-by-side comparison; either side can stay empty until you have a verified photo. Click any added photo, including the Beyblade's main photo, to open it full-size.</p>
+        <pre class="code-block"><code>observations: [
+  {
+    component: "Facebolt code",
+    note: "Describe what is visible and where the comparison comes from.",
+    midfakeImage: "images/dragoon-storm/midfake-facebolt.jpg",
+    midfakeImageAlt: "Close-up of the facebolt on the midfake example",
+    genuineImage: "images/dragoon-storm/genuine-facebolt.jpg",
+    genuineImageAlt: "Close-up of the facebolt on a genuine reference",
+    sourceLabel: "Reference source",
+    sourceUrl: "https://example.com/reference",
+    sourceLabel2: "Second reference",
+    sourceUrl2: "https://example.com/another-reference"
+  }
+]</code></pre>
+      </li>
+      <li>
+        <strong>Save and publish</strong>
+        <p>Save the changed data file and add the image files to the repository. Once the GitHub Pages update is published, the entry appears in its era and opens on a separate page with Home → Era → Beyblade breadcrumbs.</p>
+      </li>
+    </ol>
+
+    <aside class="note"><strong>Good research practice:</strong> distinguish direct observations from conclusions, link the original source, and compare more than one feature. Avoid presenting a single clue as a guaranteed authenticity test.</aside>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <p>Independent collector reference · Not affiliated with Takara Tomy or Hasbro.</p>
+      <p class="footer-tag">Let It Rip!</p>
+    </div>
+  </footer>
+</body>
+</html>

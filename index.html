@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111312">
+  <meta name="description" content="A community-friendly visual guide to comparing Beyblade midfakes across Metal Fusion, Metal Masters, Metal Fury, and Zero-G.">
+  <title>Midfake Guide — Beyblade Catalog</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f0efe9;
+      --muted: #9c9f98;
+      --surface: #181b19;
+      --surface-raised: #202421;
+      --line: #343a35;
+      --accent: #c8f169;
+      --accent-ink: #171b11;
+      --orange: #e75353;
+      --page-width: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #111312;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    button, input { font: inherit; }
+    button { color: inherit; }
+    a { color: inherit; }
+
+    .shell {
+      width: min(var(--page-width), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .topbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: .11em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 31px;
+      height: 31px;
+      place-items: center;
+      border: 1px solid var(--accent);
+      border-radius: 50%;
+      color: var(--accent);
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    .top-note {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .04em;
+      text-decoration: none;
+    }
+
+    .top-note:hover { color: var(--accent); }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(54px, 9vw, 104px) 0 56px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero::after {
+      position: absolute;
+      top: 35px;
+      right: max(-60px, calc((100vw - var(--page-width)) / 2 - 110px));
+      width: clamp(190px, 32vw, 390px);
+      aspect-ratio: 1;
+      border: 1px solid #c8f1691c;
+      border-radius: 50%;
+      box-shadow: 0 0 0 27px #c8f1690a, 0 0 0 57px #c8f16908, 0 0 0 89px #c8f16906;
+      content: "";
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 19px;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 20px;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    h1 {
+      max-width: 720px;
+      margin: 0;
+      font-size: clamp(42px, 7.4vw, 82px);
+      font-weight: 760;
+      letter-spacing: -.075em;
+      line-height: .98;
+    }
+
+    h1 span { color: var(--accent); }
+
+    .hero-copy {
+      max-width: 540px;
+      margin: 24px 0 0;
+      color: #b6b9b2;
+      font-size: clamp(15px, 1.7vw, 17px);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .hero-meta span::before {
+      margin-right: 8px;
+      color: var(--accent);
+      content: "↗";
+    }
+
+    .library { padding: 45px 0 76px; }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 25px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: 23px;
+      letter-spacing: -.04em;
+    }
+
+    .section-heading p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .search {
+      width: min(250px, 100%);
+      padding: 10px 13px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      outline: none;
+      background: var(--surface);
+      color: var(--ink);
+      font-size: 13px;
+    }
+
+    .search:focus { border-color: var(--accent); }
+    .search::placeholder { color: #797e77; }
+
+    .era-tabs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 23px;
+    }
+
+    .era-tab {
+      min-height: 70px;
+      padding: 13px 15px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--surface);
+      cursor: pointer;
+      text-align: left;
+      transition: border-color .16s ease, background .16s ease, transform .16s ease;
+    }
+
+    .era-tab:hover { transform: translateY(-2px); border-color: #68705f; }
+
+    .era-tab[aria-selected="true"] {
+      border-color: var(--accent);
+      background: #c8f16912;
+    }
+
+    .era-tab-name {
+      display: block;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .era-tab-range {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .era-overview {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 19px 21px;
+      border: 1px solid var(--line);
+      border-bottom: 0;
+      background: #151816;
+    }
+
+    .era-overview h3 {
+      margin: 0;
+      font-size: 17px;
+      letter-spacing: -.025em;
+    }
+
+    .era-overview p {
+      max-width: 690px;
+      margin: 5px 0 0;
+      color: #aeb2aa;
+      font-size: 13px;
+    }
+
+    .era-count {
+      flex: 0 0 auto;
+      padding: 5px 8px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .reference-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .reference-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--surface);
+    }
+
+    .entry-card {
+      display: block;
+      width: 100%;
+      padding: 0;
+      border: 1px solid var(--line);
+      color: inherit;
+      text-align: left;
+      text-decoration: none;
+      transition: border-color .16s ease, transform .16s ease;
+    }
+
+    .entry-card:hover, .entry-card:focus-visible {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .entry-card:focus-visible, .back-button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .entry-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 11px;
+    }
+
+    .entry-status {
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 750;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .entry-link {
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 750;
+    }
+
+    .entry-detail {
+      margin-top: 20px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--surface);
+    }
+
+    .detail-heading {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .detail-heading h3 {
+      margin: 0;
+      font-size: clamp(22px, 4vw, 32px);
+      letter-spacing: -.05em;
+    }
+
+    .detail-combo { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+
+    .back-button {
+      flex: 0 0 auto;
+      padding: 9px 12px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: var(--surface-raised);
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .detail-body { padding: 20px; }
+
+    .detail-summary {
+      max-width: 760px;
+      margin: 0 0 22px;
+      color: #c1c4bd;
+      font-size: 14px;
+    }
+
+    .detail-section-title {
+      margin: 0 0 11px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 11px;
+    }
+
+    .evidence-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: #151816;
+    }
+
+    .evidence-image {
+      position: relative;
+      display: grid;
+      min-height: 155px;
+      place-items: center;
+      overflow: hidden;
+      background: radial-gradient(ellipse at center, #c8f16912, transparent 56%), #191d1a;
+    }
+
+    .evidence-image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .evidence-placeholder {
+      max-width: 220px;
+      padding: 15px;
+      color: var(--muted);
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .evidence-copy { padding: 14px; }
+    .evidence-copy h5 { margin: 0; font-size: 14px; }
+    .evidence-copy p { margin: 7px 0 0; color: #aeb2aa; font-size: 12px; }
+
+    .evidence-source {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .shared-check {
+      margin-top: 18px;
+      padding: 15px 16px;
+      border-left: 2px solid var(--orange);
+      background: #e783530c;
+    }
+
+    .shared-check h4 { margin: 0; font-size: 13px; }
+    .shared-check p { margin: 5px 0 0; color: #bdc0b9; font-size: 12px; }
+    .detail-empty { padding: 25px; border: 1px dashed var(--line); color: var(--muted); font-size: 13px; }
+
+    .reference-image {
+      position: relative;
+      display: grid;
+      min-height: 205px;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 53%, #c8f16914, transparent 39%),
+        linear-gradient(135deg, #222723, #171a18 65%);
+    }
+
+    .reference-image::before,
+    .reference-image::after {
+      position: absolute;
+      width: 165px;
+      height: 165px;
+      border: 1px solid #c8f16920;
+      border-radius: 50%;
+      content: "";
+    }
+
+    .reference-image::after { width: 118px; height: 118px; border-color: #c8f16918; }
+
+    .top-illustration {
+      z-index: 1;
+      width: 98px;
+      height: 98px;
+      filter: drop-shadow(0 13px 16px #0008);
+      transform: rotate(-12deg);
+    }
+
+    .reference-image img {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-caption {
+      position: absolute;
+      z-index: 3;
+      right: 11px;
+      bottom: 10px;
+      padding: 4px 7px;
+      border: 1px solid #ffffff20;
+      border-radius: 2px;
+      background: #111312c9;
+      color: #d3d5cf;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .reference-copy { padding: 17px 18px 19px; }
+
+    .card-label {
+      margin: 0 0 5px;
+      color: var(--accent);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .reference-copy h4 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: -.025em;
+    }
+
+    .reference-copy > p {
+      margin: 7px 0 0;
+      color: #aeb2aa;
+      font-size: 12px;
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      padding: 36px 20px;
+      border: 1px dashed var(--line);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .note {
+      display: flex;
+      gap: 13px;
+      margin-top: 21px;
+      padding: 15px 17px;
+      border-left: 2px solid var(--orange);
+      background: #e783530c;
+      color: #bdc0b9;
+      font-size: 12px;
+    }
+
+    .note strong { color: var(--ink); }
+    .note-mark { color: var(--orange); font-weight: 900; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 0 27px;
+    }
+
+    .footer-inner p { margin: 0; }
+    .footer-tag { color: var(--accent); font-weight: 750; letter-spacing: .08em; }
+
+    @media (max-width: 700px) {
+      .shell { width: min(100% - 32px, var(--page-width)); }
+      .top-note { max-width: 145px; text-align: right; }
+      .hero { padding: 58px 0 45px; }
+      .hero::after { top: 25px; right: -100px; opacity: .7; }
+      .section-heading { align-items: stretch; flex-direction: column; gap: 14px; }
+      .search { width: 100%; }
+      .era-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .evidence-grid { grid-template-columns: 1fr; }
+      .era-overview { padding: 16px; }
+      .reference-image { min-height: 190px; }
+      .detail-heading { flex-direction: column-reverse; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+
+    @media (max-width: 460px) {
+      .reference-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="index.html" aria-label="Midfake Guide home">
+      <span class="brand-mark" aria-hidden="true">◎</span>
+      Midfake Guide
+    </a>
+    <a class="top-note" href="how-to-add.html">How to add entries ↗</a>
+  </header>
+  <main>
+    <section class="shell hero" aria-labelledby="page-title">
+      <p class="eyebrow">Midfake Beyblade Archive</p>
+      <h1 id="page-title">Spot the details.<br><span>Don't get scammed!</span></h1>
+      <p class="hero-copy">Tired of midfake listings? This guide helps you identify authentic Beyblades.</p>
+      <div class="hero-meta" aria-label="Guide details">
+        <span>5 eras covered</span>
+        <span>Visual-first references</span>
+        <span>Always a work in progress</span>
+      </div>
+    </section>
+
+    <section class="shell library" aria-labelledby="library-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="library-title">Beyblade catalog</h2>
+          <p>Choose an era, then open a Beyblade to see its individual identification notes.</p>
+        </div>
+        <label>
+          <span hidden>Search Beyblades in the selected era</span>
+          <input class="search" id="search" type="search" placeholder="Search this era…" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="era-tabs" id="era-tabs" role="tablist" aria-label="Beyblade eras"></div>
+      <div class="era-overview" id="era-overview" aria-live="polite"></div>
+      <div class="reference-grid" id="reference-grid"></div>
+      <aside class="note">
+        <span class="note-mark" aria-hidden="true">!</span>
+        <div><strong>Important across all generations: </strong>All beys should have a facebolt code, if a beyblade does not have a code inside, the bey is automatically inauthentic.</div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <p>Independent collector reference · Not affiliated with Takara Tomy or Hasbro.</p>
+      <p class="footer-tag">Let It Rip!</p>
+    </div>
+  </footer>
+
+  <script src="catalog-data.js"></script>
+  <script>
+    const { eras, beys } = window.MIDFAKE_CATALOG;
+    const tabs = document.getElementById("era-tabs");
+    const overview = document.getElementById("era-overview");
+    const grid = document.getElementById("reference-grid");
+    const search = document.getElementById("search");
+    const eraFromHash = window.location.hash.slice(1);
+    let activeEra = eras.some((era) => era.id === eraFromHash) ? eraFromHash : eras[0].id;
+
+    function renderTabs() {
+      tabs.innerHTML = eras.map((era) => `
+        <button class="era-tab" id="tab-${era.id}" type="button" role="tab"
+          aria-selected="${era.id === activeEra}" aria-controls="reference-grid"
+          tabindex="${era.id === activeEra ? "0" : "-1"}" data-era="${era.id}">
+          <span class="era-tab-name">${era.name}</span>
+          <span class="era-tab-range">${era.range}</span>
+        </button>
+      `).join("");
+    }
+
+    function topIllustration() {
+      return `<svg class="top-illustration" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 5 64 25 89 19 77 42 95 59 69 63 63 89 48 70 27 84 30 58 7 47 30 35 27 11 47 27Z" fill="#c8f169" fill-opacity=".92"/>
+        <circle cx="50" cy="49" r="20" fill="#202820" stroke="#f0efe9" stroke-opacity=".8" stroke-width="2"/>
+        <circle cx="50" cy="49" r="8" fill="#e78353"/>
+        <circle cx="50" cy="49" r="3" fill="#f0efe9"/>
+      </svg>`;
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (character) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      })[character]);
+    }
+
+    function renderCatalog() {
+      const era = eras.find((item) => item.id === activeEra);
+      const query = search.value.trim().toLowerCase();
+      const matches = beys.filter((bey) => bey.era === activeEra && (
+        `${bey.name} ${bey.combo} ${bey.summary} ${bey.observations.map((item) => `${item.component} ${item.note}`).join(" ")}`
+          .toLowerCase().includes(query)
+      ));
+
+      overview.innerHTML = `
+        <div>
+          <h3 id="active-era-title">${era.name}</h3>
+          <p>${era.description}</p>
+        </div>
+        <span class="era-count">${matches.length} ${matches.length === 1 ? "Beyblade" : "Beyblades"}</span>
+      `;
+
+      grid.setAttribute("role", "tabpanel");
+      grid.setAttribute("aria-labelledby", `tab-${era.id}`);
+      grid.innerHTML = matches.length
+        ? matches.map((bey) => `
+          <a class="reference-card entry-card" href="bey.html?id=${encodeURIComponent(bey.id)}">
+            <div class="reference-image">
+              ${topIllustration()}
+              ${bey.image ? `<img src="${escapeHtml(bey.image)}" alt="${escapeHtml(bey.imageAlt)}" loading="lazy">` : ""}
+              <span class="image-caption">${bey.image ? "Beyblade photo" : "Add a photo"}</span>
+            </div>
+            <div class="reference-copy">
+              <p class="card-label">${escapeHtml(era.name)}</p>
+              <h4>${escapeHtml(bey.name)}</h4>
+              <p>${bey.combo ? `${escapeHtml(bey.combo)} · ` : ""}${escapeHtml(bey.summary || "Catalog entry — identification notes to be added.")}</p>
+              <span class="entry-meta">
+                <span class="entry-status">${escapeHtml(bey.status)} · ${bey.observations.length} note${bey.observations.length === 1 ? "" : "s"}</span>
+                <span class="entry-link">View entry →</span>
+              </span>
+            </div>
+          </a>
+        `).join("")
+        : `<p class="empty-state">${query ? `No Beyblades match “${escapeHtml(query)}”. Try another search.` : "No Beyblade entries yet. See the how-to-add guide to get started."}</p>`;
+    }
+
+    tabs.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-era]");
+      if (!button) return;
+      activeEra = button.dataset.era;
+      search.value = "";
+      history.replaceState(null, "", `#${activeEra}`);
+      renderTabs();
+      renderCatalog();
+      document.getElementById(`tab-${activeEra}`).focus();
+    });
+
+    tabs.addEventListener("keydown", (event) => {
+      const currentIndex = eras.findIndex((era) => era.id === activeEra);
+      let nextIndex = currentIndex;
+      if (event.key === "ArrowRight") nextIndex = (currentIndex + 1) % eras.length;
+      if (event.key === "ArrowLeft") nextIndex = (currentIndex - 1 + eras.length) % eras.length;
+      if (nextIndex !== currentIndex) {
+        event.preventDefault();
+        activeEra = eras[nextIndex].id;
+        search.value = "";
+        history.replaceState(null, "", `#${activeEra}`);
+        renderTabs();
+        renderCatalog();
+        document.getElementById(`tab-${activeEra}`).focus();
+      }
+    });
+
+    window.addEventListener("hashchange", () => {
+      const selectedEra = window.location.hash.slice(1);
+      if (!eras.some((era) => era.id === selectedEra)) return;
+      activeEra = selectedEra;
+      search.value = "";
+      renderTabs();
+      renderCatalog();
+    });
+
+    search.addEventListener("input", () => {
+      renderCatalog();
+    });
+
+    renderTabs();
+    renderCatalog();
+  </script>
+</body>
+</html>
