@@ -119,7 +119,17 @@ window.MIDFAKE_CATALOG = {
       image: "images/Dark Wolf/DarkWolf.png",
       imageAlt: "Add a clear photo of Dark Wolf DF145FS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
-      observations: []
+      observations: [
+        {
+        component: "Fusion wheel",
+        note: "The midfake metal wheel has slightly worse molding and a bit of a shine to it compared to the authentic.",
+        midfakeImage: "images/Dark Wolf/mid.png",
+        midfakeImageAlt: "Add a close-up of the Dark Wolf fusion wheel",
+        genuineImage: "images/Dark Wolf/gen.png",
+        genuineImageAlt: "Add a close-up of the genuine Dark Wolf fusion wheel",
+        sourceLabel: "Tiktok reference",
+        sourceUrl: "https://www.tiktok.com/@ghostblader999/video/7468726800256961814"}
+      ]
     },
     {
       id: "Dark Bull H145SD",
