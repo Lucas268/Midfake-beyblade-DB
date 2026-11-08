@@ -16,7 +16,7 @@ window.MIDFAKE_CATALOG = {
       name: "Pegasus",
       combo: "105F",
       status: "In progress",
-      image: "images/Pegasus/Pegasis105F.png",
+      image: "images/Pegasus/Pegasis105F.webp",
       imageAlt: "Add a clear photo of Pegasus 105F",
       summary: "Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -34,9 +34,9 @@ window.MIDFAKE_CATALOG = {
         {
           component: "Performance tip · RF",
           note: "Rubber Flat performance tips are slightly more plastic-feeling than regular Rubber Flat tips, besides that the indentation on the bottom isn't as good as the genuine one.",
-          midfakeImage: "images/Storm Pegasus/tip.png",
+          midfakeImage: "images/Storm Pegasus/tip.webp",
           midfakeImageAlt: "Bottom view of the Storm Pegasus example being compared",
-          genuineImage: "images/Storm Pegasus/09StormPegasis.png",
+          genuineImage: "images/Storm Pegasus/09StormPegasis.webp",
           genuineImageAlt: "Add a genuine Storm Pegasus RF bottom-view reference",
           sourceLabel: "Video reference",
           sourceUrl: "https://www.youtube.com/watch?v=Q06DvVg3aSI&t"
@@ -56,9 +56,9 @@ window.MIDFAKE_CATALOG = {
         {
           component: "Facebolt sticker & code",
           note: "The draft reports that some examples have a blurred or pixelated facebolt sticker and recommends asking for a clear code photo. This is a lead to investigate, not proof by itself.",
-          midfakeImage: "images/Rock Leone/fb.png",
+          midfakeImage: "images/Rock Leone/fb.webp",
           midfakeImageAlt: "Add a close-up of the Rock Leone facebolt sticker and code",
-          genuineImage: "images/Rock Leone/fb2.png",
+          genuineImage: "images/Rock Leone/fb2.webp",
           genuineImageAlt: "Add a close-up of the genuine Rock Leone facebolt sticker and code",
           sourceLabel: "Reddit reference listed in draft",
           sourceUrl: "https://www.reddit.com/r/BeybladeMetal/comments/197anff/rock_leone_midfake/",
@@ -68,9 +68,9 @@ window.MIDFAKE_CATALOG = {
         {
           component: "Metal wheel",
           note: "The details in this metal wheel are very hard to notice in the pictures, the shine makes it slightly obvious but sometimes new beyblades could still be shiny. I'd recommend checking out this image's source listed in the Youtube video.",
-          midfakeImage: "images/Rock Leone/mf.png",
+          midfakeImage: "images/Rock Leone/mf.webp",
           midfakeImageAlt: "Add a Rock Leone metal wheel comparison photo",
-          genuineImage: "images/Rock Leone/legit.png",
+          genuineImage: "images/Rock Leone/legit.webp",
           genuineImageAlt: "Add a Rock Leone genuine metal wheel comparison photo",
           sourceLabel: "Youtube reference",
           sourceUrl: "https://www.youtube.com/watch?v=L54bS_L9shc"
@@ -83,7 +83,7 @@ window.MIDFAKE_CATALOG = {
       name: "Flame Sagittario",
       combo: "C145S",
       status: "In progress",
-      image: "images/Flame Sagittario/FlameSagittario.png",
+      image: "images/Flame Sagittario/FlameSagittario.webp",
       imageAlt: "Add a clear photo of Flame Sagittario C145S",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: [
@@ -91,9 +91,9 @@ window.MIDFAKE_CATALOG = {
         {
           component: "Packaging",
           note: "The packaging for this beyblade has a slightly more faded color than the genuine one.",
-          midfakeImage: "images/Flame Sagittario/MidfakeBox.png",
+          midfakeImage: "images/Flame Sagittario/MidfakeBox.webp",
           midfakeImageAlt: "Add a photo of the Flame Sagittario packaging",
-          genuineImage: "images/Flame Sagittario/GenuineBox.png",
+          genuineImage: "images/Flame Sagittario/GenuineBox.webp",
           genuineImageAlt: "Add a photo of the genuine Flame Sagittario packaging",
           sourceLabel: "Reddit reference listed in draft",
           sourceUrl: "https://www.reddit.com/r/BeybladeMetal/comments/zxl5t2/flame_sagittario_midfake_takara_tomyhasbro/?tl=sv"
@@ -101,9 +101,9 @@ window.MIDFAKE_CATALOG = {
         {
           component: "Facebolt sticker",
           note: "The midfake has a noticable difference in the facebolt sticker, it has yellow inside the eyes of the saggitarius, while the genuine one only has a solid orange color, making this one nice and easy to see.",
-          midfakeImage: "images/Flame Sagittario/mid.png",
+          midfakeImage: "images/Flame Sagittario/mid.webp",
           midfakeImageAlt: "Add a close-up of the Flame Sagittario facebolt sticker",
-          genuineImage: "images/Flame Sagittario/gen.png",
+          genuineImage: "images/Flame Sagittario/gen.webp",
           genuineImageAlt: "Add a close-up of the genuine Flame Sagittario facebolt sticker",
           sourceLabel: "Reddit reference listed in draft",
           sourceUrl: "https://www.reddit.com/r/BeybladeMetal/comments/zxl5t2/flame_sagittario_midfake_takara_tomyhasbro/?tl=sv"
@@ -116,17 +116,17 @@ window.MIDFAKE_CATALOG = {
       name: "Dark Wolf",
       combo: "DF145FS",
       status: "In progress",
-      image: "images/Dark Wolf/DarkWolf.png",
+      image: "images/Dark Wolf/DarkWolf.webp",
       imageAlt: "Add a clear photo of Dark Wolf DF145FS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: [
         {
         component: "Fusion wheel",
-        note: "The midfake metal wheel has slightly worse molding and a bit of a shine to it compared to the authentic.",
-        midfakeImage: "images/Dark Wolf/mid.png",
+        note: "The midfake metal wheel has slightly worse molding and a bit of a shine to it compared to the authentic. It appears there are also just these random circles everywhere on the bottom of the midfake dark wheel.",
+        midfakeImage: "images/Dark Wolf/mid.webp",
         midfakeImageAlt: "Add a close-up of the Dark Wolf fusion wheel",
-        genuineImage: "images/Dark Wolf/gen.png",
-        genuineImageAlt: "Add a close-up of the genuine Dark Wolf fusion wheel",
+        genuineImage: "images/Dark Wolf/gen.webp",
+        genuineImageAlt: "Add a close-up of the genuine Dark Wolf fusion wheel.",
         sourceLabel: "Tiktok reference",
         sourceUrl: "https://www.tiktok.com/@ghostblader999/video/7468726800256961814"}
       ]
@@ -137,21 +137,57 @@ window.MIDFAKE_CATALOG = {
       name: "Dark Bull",
       combo: "H145SD",
       status: "In progress",
-      image: "images/Dark Bull/DarkBull.png",
+      image: "images/Dark Bull/DarkBull.webp",
       imageAlt: "Add a clear photo of Dark Bull H145SD",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
-      observations: []
+      observations: [
+        {
+        component: "Metal wheel",
+        note: "The midfake metal wheel has slightly worse molding and a bit of a shine to it compared to the authentic. It appears there are also just these random circles everywhere on the bottom of the midfake dark wheel.",
+        midfakeImage: "images/Dark Bull/mid.webp",
+        midfakeImageAlt: "Add a close-up of the Dark Bull metal wheel",
+        genuineImage: "images/Dark Bull/gen.webp",
+        genuineImageAlt: "Add a close-up of the genuine Dark Bull metal wheel.",
+        sourceLabel: "Tiktok reference",
+        sourceUrl: "https://www.tiktok.com/@ghostblader999/video/7468726800256961814"
+        }
+      ]
     },
     {
-      id: "Storm Aquario 100HF/S",
+      id: "Storm Aquario M145Q",
       era: "metal-fusion",
       name: "Storm Aquario",
-      combo: "100HF/S",
+      combo: "M145Q",
       status: "In progress",
-      image: "images/Storm Aquario/StormAquarioHasbro.png",
-      imageAlt: "Add a clear photo of Storm Aquario 100HF/S",
+      image: "images/Storm Aquario/StormAquario.webp",
+      imageAlt: "Add a clear photo of Storm Aquario M145Q",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
-      observations: []
+      observations: [
+        {
+        component: "Metal wheel",
+        note: "The midfake metal wheel has slightly worse molding and it has this weird shine.",
+        midfakeImage: "images/Storm Aquario/mid.webp",
+        midfakeImageAlt: "Add a close-up of the Storm Aquario metal wheel",
+        genuineImage: "images/Storm Aquario/gen.webp",
+        genuineImageAlt: "Add a close-up of the genuine Storm Aquario metal wheel.",
+        sourceLabel: "Tiktok reference",
+        sourceUrl: "https://www.tiktok.com/@vitalbeyblade/video/7657227407740636418",
+        sourceLabel2: "World Hobby Shop reference",
+        sourceUrl2: "https://worldhobbyshop.in/storm-aquario-m145q/"
+        },  
+        {
+        component: "Clear Wheel color",
+        note: "The midfake clear wheel has a slightly different color compared to the genuine one.",
+        midfakeImage: "images/Storm Aquario/mid2.webp",
+        midfakeImageAlt: "Add a close-up of the Storm Aquario clear wheel",
+        genuineImage: "images/Storm Aquario/gen2.webp",
+        genuineImageAlt: "Add a close-up of the genuine Storm Aquario clear wheel.",
+        sourceLabel: "Tiktok reference",
+        sourceUrl: "https://www.tiktok.com/@vitalbeyblade/video/7657227407740636418",
+        sourceLabel2: "Beyblade Art Shop reference",
+        sourceUrl2: "https://beybladeartshop.com/products/storm-aquario-m145q-a"
+        }
+      ]
     },
     {
       id: "Storm Capricorne M145Q",
@@ -159,7 +195,7 @@ window.MIDFAKE_CATALOG = {
       name: "Storm Capricorne",
       combo: "M145Q",
       status: "In progress",
-      image: "images/Storm Capricorne/StormCapricorne.png",
+      image: "images/Storm Capricorne/StormCapricorne.webp",
       imageAlt: "Add a clear photo of Storm Capricorne M145Q",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -170,10 +206,32 @@ window.MIDFAKE_CATALOG = {
       name: "Flame Libra",
       combo: "T125ES",
       status: "In progress",
-      image: "images/Flame Libra/FlameLibra.png",
+      image: "images/Flame Libra/FlameLibra.webp",
       imageAlt: "Add a clear photo of Flame Libra T125ES",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
+    },
+    {
+      id: "Twisted Tempo 145WD",
+      era: "metal-masters",
+      name: "Twisted Tempo",
+      combo: "145WD",
+      status: "In progress",
+      image: "images/Twisted Tempo/Basalt_Horogium_145WD.webp",
+      imageAlt: "Add a clear photo of Twisted Tempo 145WD",
+      summary: "Twisted Tempo can clearly be identified by the molding issues on the bottom of the metal wheel, which are clearly visible in the pictures. The midfake also has a slightly different color and shine to it compared to the genuine one.",
+      observations: [
+        {
+        component: "Metal wheel",
+        note: "Molding issues on the bottom of the metal wheel, clearly visible on the pictures",
+        midfakeImage: "images/Twisted Tempo/mid.webp",
+        genuineImage: "images/Twisted Tempo/gen.webp",
+        midfakeImageAlt: "Add a close-up of the Twisted Tempo metal wheel",
+        genuineImageAlt: "Add a close-up of the genuine Twisted Tempo metal wheel.",
+        sourceLabel: "Source: Vinted  listing, no longer available",
+        sourceUrl: "https://Vinted.com"
+        }
+      ]
     },
     {
       id: "Lightning L-Drago 100HF",
@@ -181,7 +239,7 @@ window.MIDFAKE_CATALOG = {
       name: "Lightning L-Drago",
       combo: "100HF",
       status: "In progress",
-      image: "images/Lightning L-Drago/LightningLDrago.png",
+      image: "images/Lightning L-Drago/LightningLDrago.webp",
       imageAlt: "Add a clear photo of Lightning L-Drago 100HF",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -192,7 +250,7 @@ window.MIDFAKE_CATALOG = {
       name: "Dark Gasher",
       combo: "CH120FS",
       status: "In progress",
-      image: "images/Dark Gasher/DarkGasher.png",
+      image: "images/Dark Gasher/DarkGasher.webp",
       imageAlt: "Add a clear photo of Dark Gasher CH120FS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -225,7 +283,7 @@ window.MIDFAKE_CATALOG = {
       name: "Earth Virgo",
       combo: "GB145BS",
       status: "In progress",
-      image: "images/Earth Virgo/EarthVirgo.png",
+      image: "images/Earth Virgo/EarthVirgo.webp",
       imageAlt: "Add a clear photo of Earth Virgo GB145BS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -236,7 +294,7 @@ window.MIDFAKE_CATALOG = {
       name: "Poison Serpent",
       combo: "SW145SD",
       status: "In progress",
-      image: "images/Poison Serpent/PoisonSerpent.png",
+      image: "images/Poison Serpent/PoisonSerpent.webp",
       imageAlt: "Add a clear photo of Poison Serpent SW145SD",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -247,7 +305,7 @@ window.MIDFAKE_CATALOG = {
       name: "Evil Gemios",
       combo: "DF145FS",
       status: "In progress",
-      image: "images/Evil Gemios/EvilGemios.png",
+      image: "images/Evil Gemios/EvilGemios.webp",
       imageAlt: "Add a clear photo of Evil Gemios DF145FS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -258,7 +316,7 @@ window.MIDFAKE_CATALOG = {
       name: "Galaxy Pegasus",
       combo: "W105R²F",
       status: "In progress",
-      image: "images/Pegasus/GalaxyPegasus105R2F.png",
+      image: "images/Pegasus/GalaxyPegasus105R2F.webp",
       imageAlt: "Add a clear photo of Galaxy Pegasus W105R²F",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -269,7 +327,7 @@ window.MIDFAKE_CATALOG = {
       name: "Big Bang Pegasus F:D (Cosmic Pegasus)",
       combo: "F:D",
       status: "In progress",
-      image: "images/Pegasus/BigBangPegasusFD.png",
+      image: "images/Pegasus/BigBangPegasusFD.webp",
       imageAlt: "Add a clear photo of Big Bang Pegasus F:D (Cosmic Pegasus)",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -280,7 +338,7 @@ window.MIDFAKE_CATALOG = {
       name: "Samurai Pegasus",
       combo: "W105R²F",
       status: "In progress",
-      image: "images/Pegasus/SamuraiPegasus105R2F.png",
+      image: "images/Pegasus/SamuraiPegasus105R2F.webp",
       imageAlt: "Add a clear photo of Samurai Pegasus W105R²F",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
