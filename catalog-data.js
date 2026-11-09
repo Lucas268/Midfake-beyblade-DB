@@ -7,7 +7,7 @@ window.MIDFAKE_CATALOG = {
     { id: "metal-masters", name: "Metal Masters", range: "Second generation", description: "Add individual Metal Masters releases here as you research them." },
     { id: "metal-fury", name: "Metal Fury", range: "4D system", description: "Add individual Metal Fury releases here as you research them." },
     { id: "zero-g", name: "Zero-G", range: "Shogun Steel", description: "Add individual Zero-G releases here as you research them." },
-    { id: "Special Variants", name: "Special Variants", range: "Special Variants", description: "Recolors and limited variants of released beyblades" }
+    { id: "special-variants", name: "Special Variants", range: "Special Variants", description: "Recolors and limited variants of released beyblades" }
   ],
   beys: [
     {
@@ -29,7 +29,7 @@ window.MIDFAKE_CATALOG = {
       status: "Notes added",
       image: "images/Storm Pegasus/s-l1200.jpg",
       imageAlt: "Storm Pegasus 105RF product photo",
-      summary: "Storm Pegasus's midfake is easiest to identifty by the performance tip. though a slight shine in the metal wheel might also be a clue, always check the seller for potential obious midfakes in their collection, always ask for a picture of the facebolt code.",
+      summary: "Storm Pegasus's midfake is easiest to identifty by the performance tip. though a slight shine in the metal wheel might also be a clue, always check the seller for potential obvious midfakes in their collection, always ask for a picture of the facebolt code.",
       observations: [
         {
           component: "Performance tip · RF",
@@ -66,7 +66,7 @@ window.MIDFAKE_CATALOG = {
           sourceUrl2: "https://www.youtube.com/watch?v=L54bS_L9shc"
         },
         {
-          component: "Metal wheel",
+          component: "Rock Metal wheel",
           note: "The details in this metal wheel are very hard to notice in the pictures, the shine makes it slightly obvious but sometimes new beyblades could still be shiny. I'd recommend checking out this image's source listed in the Youtube video.",
           midfakeImage: "images/Rock Leone/mf.webp",
           midfakeImageAlt: "Add a Rock Leone metal wheel comparison photo",
@@ -82,7 +82,7 @@ window.MIDFAKE_CATALOG = {
       era: "metal-fusion",
       name: "Flame Sagittario",
       combo: "C145S",
-      status: "In progress",
+      status: "Notes added",
       image: "images/Flame Sagittario/FlameSagittario.webp",
       imageAlt: "Add a clear photo of Flame Sagittario C145S",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
@@ -115,7 +115,7 @@ window.MIDFAKE_CATALOG = {
       era: "metal-fusion",
       name: "Dark Wolf",
       combo: "DF145FS",
-      status: "In progress",
+      status: "notes added",
       image: "images/Dark Wolf/DarkWolf.webp",
       imageAlt: "Add a clear photo of Dark Wolf DF145FS",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
@@ -142,7 +142,7 @@ window.MIDFAKE_CATALOG = {
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: [
         {
-        component: "Metal wheel",
+        component: "Dark Metal wheel",
         note: "The midfake metal wheel has slightly worse molding and a bit of a shine to it compared to the authentic. It appears there are also just these random circles everywhere on the bottom of the midfake dark wheel.",
         midfakeImage: "images/Dark Bull/mid.webp",
         midfakeImageAlt: "Add a close-up of the Dark Bull metal wheel",
@@ -158,7 +158,7 @@ window.MIDFAKE_CATALOG = {
       era: "metal-fusion",
       name: "Storm Aquario",
       combo: "M145Q",
-      status: "In progress",
+      status: "notes added",
       image: "images/Storm Aquario/StormAquario.webp",
       imageAlt: "Add a clear photo of Storm Aquario M145Q",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
@@ -216,7 +216,7 @@ window.MIDFAKE_CATALOG = {
       era: "metal-masters",
       name: "Twisted Tempo",
       combo: "145WD",
-      status: "In progress",
+      status: "notes added",
       image: "images/Twisted Tempo/Basalt_Horogium_145WD.webp",
       imageAlt: "Add a clear photo of Twisted Tempo 145WD",
       summary: "Twisted Tempo can clearly be identified by the molding issues on the bottom of the metal wheel, which are clearly visible in the pictures. The midfake also has a slightly different color and shine to it compared to the genuine one.",
@@ -316,7 +316,7 @@ window.MIDFAKE_CATALOG = {
       name: "Galaxy Pegasus",
       combo: "W105R²F",
       status: "In progress",
-      image: "images/Pegasus/GalaxyPegasus105R2F.webp",
+      image: "images/Galaxy Pegasus/GalaxyPegasus.webp",
       imageAlt: "Add a clear photo of Galaxy Pegasus W105R²F",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
       observations: []
@@ -327,9 +327,9 @@ window.MIDFAKE_CATALOG = {
       name: "Big Bang Pegasus F:D (Cosmic Pegasus)",
       combo: "F:D",
       status: "In progress",
-      image: "images/Pegasus/BigBangPegasusFD.webp",
+      image: "images/Big Bang Pegasus/BigBangPegasus.webp",
       imageAlt: "Add a clear photo of Big Bang Pegasus F:D (Cosmic Pegasus)",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder.",
       observations: []
     },
     {
@@ -338,9 +338,32 @@ window.MIDFAKE_CATALOG = {
       name: "Samurai Pegasus",
       combo: "W105R²F",
       status: "In progress",
-      image: "images/Pegasus/SamuraiPegasus105R2F.webp",
+      image: "images/Samurai Pegasus/SamuraiPegasus.webp",
       imageAlt: "Add a clear photo of Samurai Pegasus W105R²F",
       summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      observations: []
+    },
+    {
+     id: "Ray Striker D125CS",
+     era: "metal-masters",
+     name: "Ray Striker",
+     combo: "D125CS",
+     status: "in progress",
+     image: "",
+     imageAlt: "Placeholder",
+     summary: "Placeholder",
+     observations: [] 
+
+    },
+    {
+      id: "Burn Phoenix 90WF",
+      era: "special-variants",
+      name: "Burn Phoenix Blizzard Version",
+      combo: "90WF",
+      status: "in progress",
+      image: "images/Burn Phoenix Blizzard V/BurnFireblazeBlizzard.webp",
+      imageAlt: "Placeholder",
+      summary: "Placeholder",
       observations: []
     }
   ]

@@ -636,7 +636,21 @@
     const grid = document.getElementById("reference-grid");
     const search = document.getElementById("search");
     const eraFromHash = window.location.hash.slice(1);
+    const savedReturnEra = sessionStorage.getItem("catalog-return-era");
+    const savedReturnScroll = Number(sessionStorage.getItem("catalog-return-scroll"));
+    const savedReturnSearch = sessionStorage.getItem("catalog-return-search");
+    const shouldRestorePosition = savedReturnEra === eraFromHash
+      && eras.some((era) => era.id === savedReturnEra)
+      && Number.isFinite(savedReturnScroll);
     let activeEra = eras.some((era) => era.id === eraFromHash) ? eraFromHash : eras[0].id;
+
+    if (shouldRestorePosition && savedReturnSearch !== null) {
+      search.value = savedReturnSearch;
+    }
+
+    sessionStorage.removeItem("catalog-return-era");
+    sessionStorage.removeItem("catalog-return-scroll");
+    sessionStorage.removeItem("catalog-return-search");
 
     function renderTabs() {
       tabs.innerHTML = eras.map((era) => `
@@ -744,8 +758,21 @@
       renderCatalog();
     });
 
+    grid.addEventListener("click", (event) => {
+      const card = event.target.closest(".entry-card");
+      if (!card || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+
+      sessionStorage.setItem("catalog-return-era", activeEra);
+      sessionStorage.setItem("catalog-return-scroll", String(window.scrollY));
+      sessionStorage.setItem("catalog-return-search", search.value);
+    });
+
     renderTabs();
     renderCatalog();
+
+    if (shouldRestorePosition) {
+      requestAnimationFrame(() => window.scrollTo(0, savedReturnScroll));
+    }
   </script>
 </body>
 </html>
