@@ -365,6 +365,38 @@ window.MIDFAKE_CATALOG = {
       imageAlt: "Placeholder",
       summary: "Placeholder",
       observations: []
+    },
+    {
+      id: "Diablo Nemesis X:D",
+      era: "metal-fury",
+      name: "Diablo Nemesis",
+      combo: "X:D",
+      status: "in progress",
+      image: "images/Diablo Nemesis/DiabloNemesis.webp",
+      imageAlt: "Placeholder",
+      summary: "Placeholder",
+      observations: [
+        {
+          component: "Metal wheel",
+          note: "The midfake core has smaller laches for the frame to sit on.",
+          midfakeImage: "images/Diablo Nemesis/mid_core.webp",
+          midfakeImageAlt: "Add a close-up of the Diablo Nemesis metal wheel",
+          genuineImage: "images/Diablo Nemesis/gen_core.webp",
+          genuineImageAlt: "Add a close-up of the genuine Diablo Nemesis metal wheel.",
+          sourceLabel: "YouTube reference",
+          sourceUrl: "https://www.youtube.com/watch?v=_zJDxtvoFt4"
+        },
+        {
+          component: "Metal wheel frame",
+          note: "The midfake frame has larger openings than the genuine one.",
+          midfakeImage: "images/Diablo Nemesis/mid_frame.webp",
+          midfakeImageAlt: "Add a close-up of the Diablo Nemesis metal wheel frame",
+          genuineImage: "images/Diablo Nemesis/gen_frame.webp",
+          genuineImageAlt: "Add a close-up of the genuine Diablo Nemesis metal wheel frame.",
+          sourceLabel: "YouTube reference",
+          sourceUrl: "https://www.youtube.com/watch?v=_zJDxtvoFt4"
+        }
+      ]
     }
   ]
 };
