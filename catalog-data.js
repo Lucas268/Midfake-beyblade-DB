@@ -371,13 +371,23 @@ window.MIDFAKE_CATALOG = {
       era: "metal-fury",
       name: "Diablo Nemesis",
       combo: "X:D",
-      status: "in progress",
+      status: "Notes added",
       image: "images/Diablo Nemesis/DiabloNemesis.webp",
       imageAlt: "Placeholder",
-      summary: "Placeholder",
+      summary: "Diablo Nemesis has one of the most obvious midfakes, the metal core and frame have different attachment sizes. Another none visual note is that the springs in the midfake are stiff compared to the authentic one.",
       observations: [
         {
-          component: "Metal wheel",
+          component: "Facebolt",
+          note: "The midfake facebolt is a different color than the genuine one, even if its not by a lot, it is still noticeable.",
+          midfakeImage: "images/Diablo Nemesis/mid_fb.webp",
+          midfakeImageAlt: "Add a close-up of the Diablo Nemesis facebolt",
+          genuineImage: "images/Diablo Nemesis/gen_fb.webp",
+          genuineImageAlt: "Add a close-up of the genuine Diablo Nemesis facebolt.",
+          sourceLabel: "YouTube reference",
+          sourceUrl: "https://www.youtube.com/watch?v=_zJDxtvoFt4"
+        },
+        {
+          component: "Metal wheel Core",
           note: "The midfake core has smaller laches for the frame to sit on.",
           midfakeImage: "images/Diablo Nemesis/mid_core.webp",
           midfakeImageAlt: "Add a close-up of the Diablo Nemesis metal wheel",
@@ -393,6 +403,16 @@ window.MIDFAKE_CATALOG = {
           midfakeImageAlt: "Add a close-up of the Diablo Nemesis metal wheel frame",
           genuineImage: "images/Diablo Nemesis/gen_frame.webp",
           genuineImageAlt: "Add a close-up of the genuine Diablo Nemesis metal wheel frame.",
+          sourceLabel: "YouTube reference",
+          sourceUrl: "https://www.youtube.com/watch?v=_zJDxtvoFt4"
+        },
+        {
+          component: "X:D",
+          note: "The midfake X:D has a different color than the genuine one (Sometimes the midfake has phillips screws instead of Y screws).",
+          midfakeImage: "images/Diablo Nemesis/mid_XD.webp",
+          midfakeImageAlt: "Add a close-up of the Diablo Nemesis X:D",
+          genuineImage: "images/Diablo Nemesis/gen_XD.webp",
+          genuineImageAlt: "Add a close-up of the genuine Diablo Nemesis X:D.",
           sourceLabel: "YouTube reference",
           sourceUrl: "https://www.youtube.com/watch?v=_zJDxtvoFt4"
         }
