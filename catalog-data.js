@@ -326,11 +326,42 @@ window.MIDFAKE_CATALOG = {
       era: "metal-fury",
       name: "Big Bang Pegasus F:D (Cosmic Pegasus)",
       combo: "F:D",
-      status: "In progress",
+      status: "Notes added",
       image: "images/Big Bang Pegasus/BigBangPegasus.webp",
       imageAlt: "Add a clear photo of Big Bang Pegasus F:D (Cosmic Pegasus)",
-      summary: "Placeholder.",
-      observations: []
+      summary: "Big Bang Pegasus F:D (Cosmic Pegasus) has a midfake that is easiest to identify via the clear wheel and PC frame, both of which have a different color than the genuine one. The F:D also has a different color than the genuine one.",
+      observations: [
+        {
+          component: "Clear wheel",
+          note: "The midfake clear wheel has a different color than the genuine one.",
+          midfakeImage: "images/Big Bang Pegasus/mid_clear.webp",
+          midfakeImageAlt: "Add a close-up of the Big Bang Pegasus clear wheel",
+          genuineImage: "images/Big Bang Pegasus/gen_clear.webp",
+          genuineImageAlt: "Add a close-up of the genuine Big Bang Pegasus clear wheel.",
+          sourceLabel: "YouTube reference",
+          sourceUrl: "https://www.youtube.com/watch?v=2p2-5H87HRQ&t=906s"
+        },
+        {
+          component: "PC frame",
+          note: "The midfake PC frame has a different color than the genuine one.",
+          midfakeImage: "images/Big Bang Pegasus/mid.webp",
+          midfakeImageAlt: "Add a close-up of the Big Bang Pegasus PC frame",
+          genuineImage: "images/Big Bang Pegasus/gen.webp",
+          genuineImageAlt: "Add a close-up of the genuine Big Bang Pegasus PC frame.",
+          sourceLabel: "YouTube reference",
+          sourceUrl: "https://www.youtube.com/watch?v=2p2-5H87HRQ&t=906s"
+        },
+        {
+          component: "F:D",
+          note: "F:D is different in color from the genuine one.",
+          midfakeImage: "images/Big Bang Pegasus/mid_FD.webp",
+          midfakeImageAlt: "Add a close-up of the Big Bang Pegasus F:D",
+          genuineImage: "images/Big Bang Pegasus/gen_FD.webp",
+          genuineImageAlt: "Add a close-up of the genuine Big Bang Pegasus F:D.",
+          sourceLabel: "YouTube reference",
+          sourceUrl: "https://www.youtube.com/watch?v=2p2-5H87HRQ&t=906s"
+        }
+      ]
     },
     {
       id: "Samurai Pegasus W105R²F",
@@ -416,6 +447,31 @@ window.MIDFAKE_CATALOG = {
           sourceLabel: "YouTube reference",
           sourceUrl: "https://www.youtube.com/watch?v=_zJDxtvoFt4"
         }
+      ]
+    },
+    {
+      id: "Jade Jupiter S130RB",
+      era: "metal-fury",
+      name: "Jade Jupiter",
+      combo: "S130RB",
+      status: "Notes added",
+      image: "images/Jade Jupiter/JadeJupiter.webp",
+      imageAlt: "Placeholder",
+      summary: "Jade Jupiter has a midfake that is easiest to identify via the performance tip, the midfake has a line going through the middle of the rubber ball tip, while the genuine one is smooth.",
+      observations: [
+        {
+          component: "Rubber ball tip",
+          note: "The midfake rubber ball has a line going through the middle of it, while the genuine one is smooth.",
+          midfakeImage: "images/Jade Jupiter/mid.webp",
+          midfakeImageAlt: "Add a close-up of the Jade Jupiter rubber ball tip",
+          genuineImage: "images/Jade Jupiter/gen.webp",
+          genuineImageAlt: "Add a close-up of the genuine Jade Jupiter rubber ball tip.",
+          sourceLabel: "Beys and bricks reference",
+          sourceUrl: "https://beysandbricks.com/jade-jupiter-s130rb-metal-fury-beyblade-bb-116/",
+          sourceLabel2: "YouTube reference",
+          sourceUrl2: "https://youtu.be/jGlfCUEI0SM?t=171"
+        }
+
       ]
     }
   ]
