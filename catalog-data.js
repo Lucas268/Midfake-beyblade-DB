@@ -85,7 +85,7 @@ window.MIDFAKE_CATALOG = {
       status: "Notes added",
       image: "images/Flame Sagittario/FlameSagittario.webp",
       imageAlt: "Add a clear photo of Flame Sagittario C145S",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Flame Sagittario's midfake is easiest to identify by the packaging and facebolt sticker. The packaging has a slightly more faded color than the genuine one, and the facebolt sticker has yellow inside the eyes of the saggitarius, while the genuine one only has a solid orange color.",
       observations: [
 
         {
@@ -118,7 +118,7 @@ window.MIDFAKE_CATALOG = {
       status: "notes added",
       image: "images/Dark Wolf/DarkWolf.webp",
       imageAlt: "Add a clear photo of Dark Wolf DF145FS",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: [
         {
         component: "Fusion wheel",
@@ -139,7 +139,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Dark Bull/DarkBull.webp",
       imageAlt: "Add a clear photo of Dark Bull H145SD",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: [
         {
         component: "Dark Metal wheel",
@@ -161,7 +161,7 @@ window.MIDFAKE_CATALOG = {
       status: "notes added",
       image: "images/Storm Aquario/StormAquario.webp",
       imageAlt: "Add a clear photo of Storm Aquario M145Q",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Storm Aquario's midfake is easiest to identify by the metal wheel and clear wheel, of which they have a different color and shine to it compared to the genuine one.",
       observations: [
         {
         component: "Metal wheel",
@@ -197,7 +197,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Storm Capricorne/StormCapricorne.webp",
       imageAlt: "Add a clear photo of Storm Capricorne M145Q",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -208,7 +208,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Flame Libra/FlameLibra.webp",
       imageAlt: "Add a clear photo of Flame Libra T125ES",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -241,7 +241,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Lightning L-Drago/LightningLDrago.webp",
       imageAlt: "Add a clear photo of Lightning L-Drago 100HF",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -252,7 +252,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Dark Gasher/DarkGasher.webp",
       imageAlt: "Add a clear photo of Dark Gasher CH120FS",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -263,7 +263,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Burn Phoenix (Fireblaze)/bey.jpg",
       imageAlt: "Add a clear photo of Burn Fireblaze 135MS",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -274,7 +274,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Earth Eagle/EarthEagle.jpg",
       imageAlt: "Add a clear photo of Earth Eagle 145WD",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -285,7 +285,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Earth Virgo/EarthVirgo.webp",
       imageAlt: "Add a clear photo of Earth Virgo GB145BS",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -296,7 +296,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Poison Serpent/PoisonSerpent.webp",
       imageAlt: "Add a clear photo of Poison Serpent SW145SD",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -307,7 +307,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Evil Gemios/EvilGemios.webp",
       imageAlt: "Add a clear photo of Evil Gemios DF145FS",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -318,7 +318,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Galaxy Pegasus/GalaxyPegasus.webp",
       imageAlt: "Add a clear photo of Galaxy Pegasus W105R²F",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -371,7 +371,7 @@ window.MIDFAKE_CATALOG = {
       status: "In progress",
       image: "images/Samurai Pegasus/SamuraiPegasus.webp",
       imageAlt: "Add a clear photo of Samurai Pegasus W105R²F",
-      summary: "Your draft has started this entry but does not include identification notes yet. Add part-by-part observations and reference sources as you research them.",
+      summary: "Placeholder",
       observations: []
     },
     {
@@ -380,8 +380,8 @@ window.MIDFAKE_CATALOG = {
      name: "Ray Striker",
      combo: "D125CS",
      status: "in progress",
-     image: "",
-     imageAlt: "Placeholder",
+     image: "images/Ray Striker/RayUnicorno.webp",
+     imageAlt: "Add a clear photo of Ray Striker D125CS",
      summary: "Placeholder",
      observations: [] 
 
@@ -470,6 +470,31 @@ window.MIDFAKE_CATALOG = {
           sourceUrl: "https://beysandbricks.com/jade-jupiter-s130rb-metal-fury-beyblade-bb-116/",
           sourceLabel2: "YouTube reference",
           sourceUrl2: "https://youtu.be/jGlfCUEI0SM?t=171"
+        }
+
+      ]
+    },
+    {
+      id: "Dark Capricorne 105RF",
+      era: "metal-fusion",
+      name: "Dark Capricorne",
+      combo: "105RF",
+      status: "Notes added",
+      image: "images/Dark Capricorne/Dark_Capricorne_105RF.webp",
+      imageAlt: "Placeholder",
+      summary: "Dark Capricorne is another beyblade with a dark metal wheel, and a rubber flat tip as well, both of which we have already covered, but i will show again.",
+      observations: [
+        {
+          component: "Dark metal wheel & Rubber flat tip",
+          note: "The midfake metal wheel has slightly worse molding and a bit of a shine to it compared to the authentic. It appears there are also just these random circles everywhere on the bottom of the midfake dark wheel. As seen in the reddit picture, the rubber flat tip is is flat compared to the genuine one.",
+          midfakeImage: "images/Dark Capricorne/mid.webp",
+          midfakeImageAlt: "Add a close-up of the Dark Capricorne dark metal wheel",
+          genuineImage: "images/Dark Capricorne/gen.webp",
+          genuineImageAlt: "Add a close-up of the genuine Dark Capricorne dark metal wheel.",
+          sourceLabel: "Random Vinted listing",
+          sourceUrl: "https://www.vinted.be/items/7395460062-dark-capricorn-bb-56-d-avec-boite-toupie-beyblade-metal-fight-takara-tomy",
+          sourceLabel2: "Reddit reference",
+          sourceUrl2: "https://www.reddit.com/r/BeybladeMetal/comments/1fndh30/the_dark_capricorn_midfake/"
         }
 
       ]
